@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Reset some default styles */
+        body,
+        h2,
+        form,
+        label,
+        input,
+        textarea,
+        button {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply some basic styling to the form */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Style the form sections */
+        .PAN-section {
+            margin-bottom: 15px;
+        }
+
+        /* Style the labels */
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Style the input fields and textarea */
+        .PAN-input,
+        .PAN-border {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        /* Disable the URL input field */
+        #PAN_url {
+            /* cursor: not-allowed; */
+            background-color: #eee;
+        }
+
+        /* Style the button */
+        .PAN-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Style the button on hover */
+        .PAN-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Your Suggestion for me </h2>
+    <form action="action.php" method="post">
+        <div class="PAN-section">
+            <label for="err_email">Your E-mail:</label>
+            <input class="PAN-input PAN-border" type="text" style="margin-top:5px;width:100%" id="err_email"
+                name="err_email">
+        </div>
+        <div class="PAN-section">
+            <label for="err_url">Page address:</label>
+            <input class="PAN-input PAN-border" type="text" style="width:100%;margin-top:5px" id="err_url"
+                name="err_url">
+        </div>
+        <div class="PAN-section">
+            <label for="err_desc">Description:</label>
+            <textarea rows="10" class="PAN-input PAN-border" id="err_desc" name="err_desc"
+                style="width:100%;margin-top:5px;resize:vertical;"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="PAN-button PAN-dark-grey">Submit</button>
+        </div>
+        <br>
+    </form>
+</body>
+
+</html>
